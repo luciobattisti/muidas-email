@@ -1,10 +1,3 @@
-// https://articles.wesionary.team/sending-emails-with-go-golang-using-smtp-gmail-and-oauth2-185ee12ab306
-// https://medium.com/@dhanushgopinath/sending-html-emails-using-templates-in-golang-9e953ca32f3d
-// https://www.geeksforgeeks.org/sending-email-using-smtp-in-golang/
-// https://stackoverflow.com/questions/55393965/how-to-send-a-html-templated-body-as-an-email-through-gmail-go-sdk
-// https://freshman.tech/snippets/go/image-to-base64/
-// https://www.geeksforgeeks.org/email-template-using-html-and-css/
-
 package main
  
 import (
