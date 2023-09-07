@@ -33,7 +33,7 @@ func main() {
     // Specify host
     host := "smtp.gmail.com"
  
-    // Its the default port of smtp server
+    // This is the default port of smtp server
     port := "587"
  
     // Authenticate
@@ -68,7 +68,7 @@ func main() {
             body,
         )
     
-        // handling the errors
+        // Handling the errors
         if err != nil {
             fmt.Println(err)
             os.Exit(1)
