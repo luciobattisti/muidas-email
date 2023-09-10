@@ -15,6 +15,7 @@ func main() {
     // Parse args
     htmlTemplatePtr := flag.String("html-template", "gotemplates/default.html", "HTML Template File")
     emailFpathPtr := flag.String("newsletter", "../data/-emails.csv", "Email Newsletter File")
+    subject := flag.String("subject", "Muidas Newsletter", "Email subject")
     from := flag.String("from", "", "Email sender")
     password := flag.String("token", "", "Email token")
 
@@ -38,7 +39,7 @@ func main() {
         var data interface {}
         template := emailutils.ParseTemplate(*htmlTemplatePtr, data)
         msg := emailutils.GetMessageString(
-            "Muidas Newsletter Test",
+            *subject,
             *from,
             *from,
             email, 

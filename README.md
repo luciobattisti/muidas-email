@@ -10,7 +10,7 @@ go build -o gomail.so
 ### Run
 
 ```bash
-./gomail.so -html-template=gotemplates/snowfall-release.html -newsletter=../data/sample-emails.csv -from=<your-email> -token=<your-email-token> 
+./gomail.so -html-template=gotemplates/snowfall-release.html -newsletter=../data/sample-emails.csv -subject='Hello from Muidas' -from=<your-email> -token=<your-email-token> 
 ```
 
 ## Run email validator
