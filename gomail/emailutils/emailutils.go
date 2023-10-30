@@ -10,17 +10,16 @@ import (
 )
 
 func GetMessageString(
-		subject string, replyTo string, from string, to string, body string,
-	) []byte {
+	subject string, replyTo string, from string, body string,
+) []byte {
 	return []byte(
-		"Reply-To: " + replyTo + 
-		"\r\n" + "From: " + 
-		from + "\r\n" + "To: " +
-		to + "\r\n" +
-		"Subject: " + subject + "\r\n" +
-		"MIME-Version: 1.0\r\n" +
-		"Content-Type: text/html; charset=\"utf-8\"\r\n\r\n" +
-		body + "\r\n",
+		"Reply-To: " + replyTo +
+			"\r\n" + "From: " +
+			from + "\r\n" +
+			"Subject: " + subject + "\r\n" +
+			"MIME-Version: 1.0\r\n" +
+			"Content-Type: text/html; charset=\"utf-8\"\r\n\r\n" +
+			body + "\r\n",
 	)
 }
 
